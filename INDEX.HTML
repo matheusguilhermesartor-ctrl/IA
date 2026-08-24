@@ -1,0 +1,385 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Future - Inteligência Artificial</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #070b17;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(7, 11, 23, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #202943;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #00eaff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 60px;
+            background:
+                radial-gradient(circle at 50% 40%, #123b68 0%, transparent 35%),
+                linear-gradient(135deg, #070b17, #0c1025);
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            background: linear-gradient(90deg, #00eaff, #8b5cf6);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #b8c2d9;
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #00cfff, #7c3aed);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px #00cfff55;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .title h2 {
+            font-size: 40px;
+            color: #00eaff;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #9ba8c4;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #c7cee0;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            border: 1px solid #202943;
+            border-radius: 20px;
+            background: #0d1326;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00eaff;
+            box-shadow: 0 15px 40px #00eaff15;
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .card p {
+            color: #9ba8c4;
+        }
+
+        .future {
+            background: #0a1020;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 30px;
+            background: #10172c;
+            border-radius: 18px;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 40px;
+            color: #00eaff;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #202943;
+            color: #71809e;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            nav {
+                display: none;
+            }
+
+            section {
+                padding: 80px 5%;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🤖 IA FUTURE</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#futuro">Futuro</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h1>O Futuro é IA</h1>
+
+        <p>
+            A Inteligência Artificial está transformando a maneira como
+            trabalhamos, aprendemos, criamos e nos conectamos com o mundo.
+        </p>
+
+        <a href="#sobre" class="btn">Explorar IA 🚀</a>
+    </div>
+</section>
+
+<section id="sobre">
+    <div class="title">
+        <h2>🧠 O que é IA?</h2>
+        <p>Entenda uma das tecnologias mais importantes da atualidade.</p>
+    </div>
+
+    <div class="about">
+        <p>
+            Inteligência Artificial é um conjunto de tecnologias capazes de
+            realizar tarefas que normalmente exigiriam inteligência humana,
+            como reconhecer padrões, compreender linguagem, analisar dados,
+            gerar conteúdo e tomar decisões.
+        </p>
+    </div>
+</section>
+
+<section id="aplicacoes">
+    <div class="title">
+        <h2>⚡ Aplicações da IA</h2>
+        <p>A inteligência artificial já está presente em diversas áreas.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💬</div>
+            <h3>Assistentes Virtuais</h3>
+            <p>
+                Sistemas capazes de conversar, responder perguntas e ajudar
+                usuários em diversas tarefas.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏥</div>
+            <h3>Saúde</h3>
+            <p>
+                A IA pode auxiliar na análise de exames, pesquisa científica
+                e descoberta de novos tratamentos.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚗</div>
+            <h3>Automóveis</h3>
+            <p>
+                Sistemas inteligentes podem ajudar veículos a interpretar
+                o ambiente e automatizar determinadas funções.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Criação</h3>
+            <p>
+                Ferramentas de IA podem gerar imagens, textos, músicas,
+                vídeos e outros tipos de conteúdo.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Programação</h3>
+            <p>
+                A IA pode auxiliar programadores a escrever, explicar,
+                revisar e corrigir código.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Educação</h3>
+            <p>
+                Sistemas inteligentes podem ajudar estudantes a aprender
+                conteúdos de maneira personalizada.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="future" id="futuro">
+    <div class="title">
+        <h2>🔮 O Futuro da IA</h2>
+        <p>
+            A tecnologia continua evoluindo rapidamente.
+        </p>
+    </div>
+
+    <div class="stats">
+
+        <div class="stat">
+            <strong>01</strong>
+            Automação
+        </div>
+
+        <div class="stat">
+            <strong>02</strong>
+            Robótica
+        </div>
+
+        <div class="stat">
+            <strong>03</strong>
+            Ciência
+        </div>
+
+        <div class="stat">
+            <strong>04</strong>
+            Educação
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <div class="title">
+        <h2>🚀 Prepare-se para o futuro</h2>
+        <p>
+            Aprender sobre Inteligência Artificial é uma ótima maneira
+            de entender as tecnologias que estão moldando o mundo.
+        </p>
+
+        <a href="#inicio" class="btn">Voltar ao início ↑</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 IA Future — Site educativo sobre Inteligência Artificial.
+</footer>
+
+<script>
+    // Efeito simples no cabeçalho ao rolar a página
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+
+        if (window.scrollY > 50) {
+            header.style.background = "rgba(4, 7, 18, 0.98)";
+        } else {
+            header.style.background = "rgba(7, 11, 23, 0.9)";
+        }
+    });
+</script>
+
+</body>
+</html>
+```
